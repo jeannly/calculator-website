@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./script.js"></script>
+  <script defer src="./ipcalc.js"></script>
+</head>
+
+<body>
+<title>IP Calculator</title>
+  <!-- Header and nav bar -->
+  <header>
+    <div class="ui secondary menu">
+        <div class="header item">
+            IP Calculator
+        </div>
+        <a class="item">About</a>
+        <div class="dropdown item">
+        Tools
+        </div>
+        <div class="ui popup transition hidden">
+        <div class="ui one column relaxed equal height divided grid">
+            <div class="column">
+            <div class="ui link list">
+                <a class="active item">IP Calculator</a>
+                <a class="item" href="./base-converter.html">Base Converter</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </header>
+  <!-- Calculator -->
+  <div class="calculator-input">
+    <form class="ui huge transparent icon input" id="calculator-form" autocomplete="off">
+        <input type="text" id="calculator-input-box" placeholder="192.168.0.43/24" maxlength="18" size="17">
+        <i class="link big arrow right icon"></i>
+    </form>
+  </div>
+    <h2 class="annotation">
+        Click an IP to copy it to clipboard.
+    </h2>
+    <ul class="calculator-results">
+        <li class="calculator-result">
+            <h1>Network address</h1>
+            <a id="network-address" onclick="copyResult('network-address')">192.168.0.0</a>
+        </li>
+        <li class="calculator-result">
+            <h1>Netmask</h1>
+            <a id="netmask" onclick="copyResult('netmask')">255.255.255.0</a>
+        </li>
+        <li class="calculator-result">
+            <h1>Number of usable IP addresses</h1>
+            <a id="number-of-IPs" onclick="copyResult('number-of-IPs')">254</a>
+        </li>
+        <li class="calculator-result">
+            <h1>Minimum usable IP address</h1>
+            <a id="min-IP" onclick="copyResult('min-IP')">192.168.0.1</a>
+        </li>
+        <li class="calculator-result">
+            <h1>Maximum usable IP address</h1>
+            <a id="max-IP" onclick="copyResult('max-IP')">192.168.0.254</a>
+        </li>
+        <li class="calculator-result">
+            <h1>Broadcast address</h1>
+            <a id="broadcast-address" onclick="copyResult('broadcast-address')">
+                192.168.0.255
+            </a>
+        </li>
+    </ul>
+  
+</body>
+
+</html>

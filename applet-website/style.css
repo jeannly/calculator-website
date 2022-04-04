@@ -1,0 +1,63 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* Nav bar */
+.ui.secondary.menu {
+    border-bottom: .5px solid #2866649b !important;
+}
+.ui.secondary.menu .header.item {
+    color: #662e28;
+}
+.ui.secondary.menu .item {
+    font-family: 'Roboto Mono';
+    font-size: 20pt;
+    color: #3b7696;
+    transition: background .5s !important;
+}
+.ui.link.list .item:hover {
+    background-color: inherit !important;
+}
+.ui.link.list .active.item{
+    background-color: inherit !important;
+}
+
+/* IP Calculator */
+
+h2.annotation {
+    margin-left: 30px;
+    font-size: 10pt;
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+    color: gray;
+}
+.calculator-input {
+    padding: 50px 0;
+}
+
+.calculator-input #calculator-input-box {
+    font-size: 72pt;
+    padding: 50px 50px !important;
+    color: #ce8e77;
+}
+
+.calculator-results {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.calculator-result * {
+    font-size: 15pt;
+    font-family: 'Roboto Mono';
+}
+
+.calculator-result a:hover {
+    cursor: pointer;
+    color: #3b7696bc;
+}
