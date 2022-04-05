@@ -1,5 +1,5 @@
 # calculator-website
-My 1 week project for learning HTML/CSS/JavaScript.
+My 3-day project for learning HTML/CSS/JavaScript.
 A simple static website that will host tools I find handy for uni classes.
 
 Technologies used:
