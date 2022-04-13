@@ -1,0 +1,22 @@
+{
+  "name": "calculator-website",
+  "version": "1.0.0",
+  "description": "My 3-day project for learning HTML/CSS/JavaScript. A simple static website that will host tools I find handy for uni classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeannly/calculator-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeannly/calculator-website/issues"
+  },
+  "homepage": "https://github.com/jeannly/calculator-website#readme",
+  "dependencies": {
+    "mocha": "^9.2.2"
+  }
+}
